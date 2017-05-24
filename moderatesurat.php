@@ -75,7 +75,7 @@ font-size: 16px;">&nbsp;
                                 <a href="listpost.php">Lists of Announcements</a>
                             </li>
 						</ul>
-                    </li>
+                    </li> 
                     <li>
                         <a class="active-menu" href="#"> Data DESA-KU<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
