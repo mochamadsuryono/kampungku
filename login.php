@@ -103,7 +103,7 @@
           <label><b>Email</b></label>
 			<input class="w3-input w3-round w3-border" type="email" placeholder="Email" name="emailuser" id="emailuser" required><br/>
 		  <label><b>Password</b></label>
-			<input class="w3-input w3-round w3-border" type="password" placeholder="Password" name="passuser" id="passuser" min="8" required><br/>
+			<input class="w3-input w3-round w3-border" type="password" placeholder="Password at least contains 8 characters" name="passuser" id="passuser" min="8" required><br/>
 		  <label><b>Birth</b></label>
 			<input class="w3-input w3-round w3-border" type="date" placeholder="Birth" name="dateuser" id="dateuser" class="datepicker" required><br/>
 		  <label><b>Phone</b></label>

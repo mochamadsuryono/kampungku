@@ -9,7 +9,7 @@
 	$query = mysqli_query($conn, "SELECT * FROM villagers WHERE id_villagers = '$id'");
 	$result = mysqli_fetch_array($query);
 	$author = $result['name_villager'];
-	$timestamp = date("Y-m-d H:i:s");
+	$timestamp = date("Y-m-d");
 	
 		$sql_posting = "INSERT INTO letters(id_letter, author, category_letter, content_letter, due_date, status_letter) 
 						VALUE('','$author', '$category_letter', '$content_letter', '$due_date','yet')";

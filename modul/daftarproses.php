@@ -14,7 +14,7 @@
 	$photo_loc = $_FILES["photomember"]["tmp_name"];
 	$photo_name = $_FILES["photomember"]["name"];
 	
-	if($photo_size < 1000000){
+	if($photo_size < 1000000 && (strlen(trim($pass))>=8)){
 		move_uploaded_file($photo_loc, "$upload_dir/$photo_name");
 		$sql_tambah = "INSERT INTO villagers(id_villagers, name_villager, email_villager, password_villager, birth_date_villager, phone_villager, address_villager, photo_villager) 
 					  VALUE('','$name','$email','$encrypt','$dob','$phone','$address','$folder/$photo_name')";

@@ -75,7 +75,7 @@ font-size: 16px;">&nbsp;
                                 <a href="listpost.php">Lists of Announcements</a>
                             </li>
 						</ul>
-                    </li> 
+                    </li>
                     <li>
                         <a class="active-menu" href="#"> Data DESA-KU<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -124,7 +124,8 @@ font-size: 16px;">&nbsp;
 											<th>Nama</th>
 											<th>Kategori Surat</th>
 											<th>Duedate</th>
-											<th colspan=3>Action</th>
+											<th>Preview</th>
+											<th colspan=2>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -136,21 +137,8 @@ font-size: 16px;">&nbsp;
 														<td>'.$result3['author'].'</td>
 														<td>'.$result3['category_letter'].'</td>
 														<td>'.$result3['due_date'].'</td>
-														<td class="hide-on-med-and-down">
-															<div class="w3-container"><a class="modal-trigger waves-effect waves-light btn" href="#preview">Preview</a></td>
-															<!-- preview begin structure -->
-
-															<div id="preview" class="modal modal-fixed-footer">
-																<div class="modal-content">
-																	'.$result3['content_letter'].'
-																</div>
-																<div class="modal-footer">
-																	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-																</div>
-															</div>
-
-
-															<!-- /preview end structure -->
+														<td>'.$result3['content_letter'].'</td>
+														
 														<td>
 															<form name="approver" action="modul/approve.php" method="POST">
 																<input value='.$result3['id_letter'].' type="hidden" name="verified">
@@ -205,4 +193,3 @@ font-size: 16px;">&nbsp;
 <?php
 	}
 ?>
-		    
