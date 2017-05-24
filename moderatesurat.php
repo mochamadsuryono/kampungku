@@ -169,7 +169,7 @@ font-size: 16px;">&nbsp;
 										}
 										else {
 									?>
-										<p class="w3-center">Tidak ada Request Surat baru</p>
+										<p class="w3-center">Tidak ada Request Surat Baru</p>
 									<?php
 										}
 									?>
@@ -205,3 +205,4 @@ font-size: 16px;">&nbsp;
 <?php
 	}
 ?>
+		    
