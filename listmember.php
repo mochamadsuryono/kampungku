@@ -44,7 +44,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="dashboard.php">Dashboard</a> 
-            </div>
+            </div> 
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
