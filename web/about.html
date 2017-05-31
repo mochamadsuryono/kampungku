@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<?php
+	include 'modul/connect.php';
+	include "modul/page.php";
+  
+	if($_SESSION['status'] == "user"){
+	    $id = $_SESSION['id'];
+		$query = mysqli_query($conn, "SELECT * FROM villagers WHERE id_villagers = '$id'");
+		$result = mysqli_fetch_array($query);
+	}
+?>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>DESA-KU | Kenali Desamu, Sejahtera Hidupmu!</title>
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<!-- Custom Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards%7CDosis:300,400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800;' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style2.css" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand page-scroll" href="#page-top"><img src="" alt=""></a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<nav><ul class="nav navbar-nav navbar-right">
+			<li>
+			<a class="page-scroll" href="index.php">Home</a>
+			</li>
+			<li>
+			<a class="page-scroll" href="services.php">Services</a>
+			</li>
+			<li>
+			<a class="page-scroll" href="about.html">About</a>
+			</li>
+			<?php			
+				if($_SESSION['status'] == "user"){
+			?>
+			<li>
+			<a href="profile.php"><span>Profile</span></a>
+			</li>
+			<li>
+			<a href="modul/logoutproses.php"><span>Logout</span></a>
+			</li>
+			<?php
+				}
+				else{
+			?>
+			<li>
+			<a href="login.php"><span>Login</span></a>
+			</li>
+			<?php
+				}
+			?>
+		</ul></nav>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+
+<!-- Section About
+================================================== -->
+<section id="about">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1 text-center">
+			<h2 class="section-heading">ABOUT DESA-KU CANTIK<br/> & <b>SPEECH</b></h2>
+			<hr>
+			<p>
+				 "DESA-KU Cantik" merupakan sebuah pelayanan desa terpadu berbasis Online yang memberikan kemudahan akses dan kenyamanan untuk masyarakat. Kini, masyarakat mampu mengakses informasi secara realtime dan lebih update tentunya. Berbagai pelayanan yang diberikan juga memberikan banyak kemudahan untuk masyarakat. Ayo, kenali desamu sekarang!
+			</p>
+	</div>
+</div>
+</div>
+</section>
+<!-- Section after about --->
+<section class="no-padding">
+<div class="equal-heights w-middle">
+<div class="col-md-4 bg-gray">
+	<div class="box">
+		<h2>Give <b>Cheerfully</b></h2>
+		<p>
+			 When we give cheerfully and accept gratefully, everyone is blessed. A bone to the dog is not charity. Charity is the bone shared with the dog, when you are just as hungry as the dog.
+		</p>
+	</div>
+</div>
+<div class="col-md-4 bg-darkgray">
+	<div class="box">
+		<h2>Real <b>Solutions</b></h2>
+		<p>
+			 The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer. Let us not forget that the real solution lies in a world in which charity will be unnecessary.
+		</p>
+	</div>
+</div>
+<div class="col-md-4 bg-gray">
+	<div class="box">
+		<h2>Enjoy <b>Life</b></h2>
+		<p>
+			 The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer. Let us not forget that the real solution lies in a world in which charity will be unnecessary.
+		</p>
+	</div>
+</div>
+</div>
+</section>
+<div class="clearfix">
+</div>
+<section>
+</section>
+
+
+<!-- Section Fun Facts
+================================================== -->
+<section id="funfacts" class="parallax parallax-image" style="background-image:url(img/doctor1.jpg);">
+<div class="wrapsection">
+<div class="container">
+	<div class="parallax-content">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="funfacts text-center">
+					
+					<h2   ></h2>
+					<h4></h4>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="funfacts text-center">
+					<h2 class="counter"> THE SPEECH</h2>
+					<h4>Awards Received</h4>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="funfacts text-center">
+					<div class="icon">
+						<i class="fa fa-send-o"></i>
+					</div>
+					<h2 class="counter" data-from="0" data-to="317" data-speed="2500"></h2>
+					<h4>Letters Sent</h4>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="funfacts text-center">
+					<div class="icon">
+						<i class="fa fa-user"></i>
+					</div>
+					<h2 class="counter" data-from="0" data-to="458" data-speed="2500"></h2>
+					<h4>Hired People</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<div class="clearfix">
+</div>
+
+
+<!-- Section Contact
+================================================== -->
+<section id="contact">
+<div class="container">
+<div class="row">
+	<div class="col-md-8 col-md-offset-2 text-center">
+		<h2 class="section-heading">CONTACT <b>US</b></h2>
+		<hr class="primary">
+		<p>
+			 Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
+		</p>
+		<div class="regularform">
+			<div class="done">
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					Your message has been sent. Thank you!
+				</div>
+			</div>
+			<form method="post" action="contact.php" id="contactform" class="text-left">
+				<input name="name" type="text" class="col-md-6 norightborder" placeholder="Your Name *">
+				<input name="email" type="email" class="col-md-6" placeholder="E-mail address *">
+				<textarea name="comment" class="col-md-12" placeholder="Message *"></textarea>
+				<input type="submit" id="submit" class="contact submit btn btn-primary btn-xl" value="Send message">
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+
+<!-- Section Footer
+================================================== -->
+<footer>
+<div class="container">
+	<br>
+	<br>
+	<div class="copyright">
+		<p> <br> <center> © 2017 DESA-KU | Kenali Desamu, Sejahtera Hidupmu</center></a></p>
+	</div>
+	<!-- //copyright --> 
+</div></footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/countto.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
