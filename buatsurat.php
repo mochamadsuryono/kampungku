@@ -83,6 +83,25 @@
 </div>
 <!-- /.container -->
 </nav>
+<<<<<<< HEAD
+=======
+
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script type="text/javascript">
+		tinymce.init({
+			selector: '#isiartikel',
+			theme: 'modern',
+			height: 250,
+			plugins: [
+				'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+				'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+				'save table contextmenu directionality emoticons template paste textcolor'
+			],
+			content_css: 'css/content.css',
+			toolbar: 'insertfile undo redo | styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | numlist outdent indent | link image | preview fullpage | forecolor backcolor'
+		});
+	</script>
+>>>>>>> 404ee38b07ae6551027b6f5252e0262023db964f
 	
 <section id="contact">
 <div class="container">

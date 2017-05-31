@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 require_once('connect.php');
 if(isset($_POST) & !empty($_POST)){
 	$email_villager = mysqli_real_escape_string($conn, $_POST['email_villager']);
@@ -23,4 +24,8 @@ if(isset($_POST) & !empty($_POST)){
 		echo "User name does not exist in database";
 	}
 }
+=======
+	include 'connect.php';
+	//belum ada
+>>>>>>> 404ee38b07ae6551027b6f5252e0262023db964f
 ?>

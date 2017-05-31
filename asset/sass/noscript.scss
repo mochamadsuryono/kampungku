@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -13,4 +14,21 @@
 
 	body {
 		overflow-x: scroll;
+=======
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Page */
+
+	body {
+		overflow-x: scroll;
+>>>>>>> 404ee38b07ae6551027b6f5252e0262023db964f
 	}

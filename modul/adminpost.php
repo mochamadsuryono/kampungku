@@ -13,7 +13,10 @@
 		
 		if(($info[2] !== IMAGETYPE_GIF) && ($info[2] !== IMAGETYPE_JPEG) && ($info[2] !== IMAGETYPE_PNG)){
 		?>  
+<<<<<<< HEAD
 			<script language="javascript">alert("Posting Failed! Please Try Again.");</script>
+=======
+>>>>>>> 404ee38b07ae6551027b6f5252e0262023db964f
 			<script>document.location.href='../adminpost.php';</script>	
 		<?php
 		}

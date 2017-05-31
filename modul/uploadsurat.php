@@ -18,13 +18,21 @@
 		if ($hasil) {
 ?>
 
+<<<<<<< HEAD
 		<script language="javascript">alert("Requesting successful! Please wait for confirmation.");</script>
+=======
+		<script language="javascript">alert("Requesting Successful! Please Wait For Confirmation");</script>
+>>>>>>> 404ee38b07ae6551027b6f5252e0262023db964f
 		<script>document.location.href='../buatsurat.php';</script>
 <?php
 		}
 	else{
 ?>
+<<<<<<< HEAD
 		<script language="javascript">alert("Requesting failed! Please try again.");</script>
+=======
+		<script language="javascript">alert("Requesting Failed! Please Try Again");</script>
+>>>>>>> 404ee38b07ae6551027b6f5252e0262023db964f
 		<script>document.location.href='../buatsurat.php';</script>
 <?php
 		}

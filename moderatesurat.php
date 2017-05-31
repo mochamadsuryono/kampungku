@@ -138,6 +138,7 @@ font-size: 16px;">&nbsp;
 														<td>'.$result3['category_letter'].'</td>
 														<td>'.$result3['due_date'].'</td>
 														<td>'.$result3['content_letter'].'</td>
+<<<<<<< HEAD
 														<!--td class="hide-on-med-and-down">
 															<div class="w3-container"><a class="modal-trigger waves-effect waves-light btn" href="#preview">Preview</a></td>-->
 															<!-- preview begin structure
@@ -151,6 +152,9 @@ font-size: 16px;">&nbsp;
 																</div>
 															</div>
 															preview end structure -->
+=======
+														
+>>>>>>> 404ee38b07ae6551027b6f5252e0262023db964f
 														<td>
 															<form name="approver" action="modul/approve.php" method="POST">
 																<input value='.$result3['id_letter'].' type="hidden" name="verified">
